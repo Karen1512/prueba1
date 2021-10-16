@@ -16,10 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from webapp.views import bienvenido, despedida
+from webapp.views import bienvenido
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', bienvenido),
-    path('despedida', despedida)  # '' facilita el acceso automáticamente
+    path('', bienvenido), # '' facilita el acceso automáticamente
 ]
